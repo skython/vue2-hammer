@@ -15,6 +15,7 @@ export const VueHammer = {
           el.hammer = new Hammer.Manager(el)
         }
         const mc = el.hammer
+        mc.options.domEvents = true
 
         // determine event type
         const event = binding.arg
